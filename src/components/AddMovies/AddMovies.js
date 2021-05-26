@@ -13,7 +13,8 @@ const AddMovies = ({adMovie}) => {
     Storyline:'',
     year:'',
     rating: 0 ,
-    poster:''
+    poster:'',
+    Trailer:''
   })
   
   const changeMovie = (e) =>
@@ -76,9 +77,14 @@ const AddMovies = ({adMovie}) => {
             halfIcon={<i className="fa fa-star-half-alt"></i>}
                 fullIcon={<i className="fa fa-star"></i>} />
             </div>
+            <div className="input-block">
+            <label className="input-label">Trailer:
+            </label>
+            <input type="text" name="Trailer" value={newMov.Trailer} onChange={changeMovie}/>
+            </div>
           <div>
           <Button variant="primary" onClick={()=>
-          {adMovie(newMov);setNewMov({title:"",poster:"",Storyline:"",year:"",rating:""});setShow(false)}}>
+          {adMovie(newMov);setNewMov({title:"",poster:"",Storyline:"",year:"",rating:"",Traiter:""});setShow(false)}}>
             Add Movie
           </Button>        
           </div>
