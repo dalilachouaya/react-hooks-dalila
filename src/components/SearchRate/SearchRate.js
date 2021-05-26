@@ -10,7 +10,7 @@ const SearchRate = ({searchRatingMovie}) => {
         <input type="text" placeholder="Search for a movie" onChange={changeRatingMovie} defaultValue=""/>
           */}
             <form className="rateCantainer"> 
-            <ReactStars  onChange={ratingChanged} count={5} size={28} activeColor="#ffd700"edit={true} isHalf={true} 
+            <ReactStars  onChange={ratingChanged} count={5} size={30} activeColor="#ffd700"edit={true} isHalf={true} 
             emptyIcon={<i className="far fa-star"></i>}
             halfIcon={<i className="fa fa-star-half-alt"></i>}
             fullIcon={<i className="fa fa-star"></i>} />

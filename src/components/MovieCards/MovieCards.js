@@ -19,7 +19,7 @@ export const MovieCards = ({ film }) => {
           emptyStarColor={"white"}
         />
             </div>
-          <Button className="button" href={film.Trailer} >Watch </Button>
+          <Button className="button" href={film.Trailer} > Trailer </Button>
         </Card.Body>
       </Card>
     </div>
