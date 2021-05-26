@@ -15,7 +15,6 @@ const AddMovies = ({adMovie}) => {
     rating: 0 ,
     poster:''
   })
-  /* rating ==0 / null*/
   
   const changeMovie = (e) =>
   {
